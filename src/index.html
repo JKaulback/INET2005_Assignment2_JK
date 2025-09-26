@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Business Contacts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    #contacts-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    #contacts-table th, #contacts-table td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    #contacts-table th {
+      background-color: #007BFF;
+      color: white;
+    }
+    #contacts-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    #table-caption {
+      caption-side: top;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <table id="contacts-table">
+    <caption id="table-caption">Business Contacts</caption>
+    <thead id="table-head">
+      <tr id="header-row">
+        <th id="col-name">Name</th>
+        <th id="col-company">Company</th>
+        <th id="col-email">Email</th>
+        <th id="col-phone">Phone</th>
+        <th id="col-address">Address</th>
+        <th id="col-city">City</th>
+        <th id="col-notes">Notes</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+        <script src="get-contacts.js"></script>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+
+</body>
+</html>
